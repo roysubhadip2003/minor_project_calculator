@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blue;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;                /* CSS grid offers a grid-based layout system with rows and columns*/
+    place-items: center;
+}
+
+.calculator{
+    height: auto;
+    width: auto;
+    padding: 20px;
+    background-color: yellow;
+    border-radius: 10px;
+    box-shadow: 0 0 30px black;  /* box-shadow CSS property adds shadow effect around an element's frame*/
+}
+
+#display{
+    height: 160px;
+    width: auto;
+    display: flex;                 /*flexbox is a flexible box designed to build layouts in CSS*/
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+button{
+    height: 60px;
+    width: 60px;
+    border: 0; 
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button#equal{
+    height: 135px;
+    background-color: darkgray;
+    color: black;
+}
+
+.calculator button#clear{
+    background-color: crimson;
+    color: white;
+}
+
+.calculator button.btn-operator{
+    background-color: black;
+    color: orange;
+}
+
+.calculator button.btn-number{
+    background-color: black;
+    color: orange;
+}
